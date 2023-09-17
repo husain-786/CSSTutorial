@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: aqua;
+}
+
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(191, 162, 43);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* ************** Applying Animation Properties ************** */
+    animation-name: widthAnimate;
+
+    animation-duration: 2s;
+
+    animation-timing-function: ease-in-out;
+
+    animation-delay: 1s;
+
+    /* animation-iteration-count: ensure the number of animation to happen.....*/
+    animation-iteration-count: 10;
+
+    /* normal is default so it will go same as it was going earlier.... */
+    /* animation-direction: normal; */
+    /* reverse aniamtes from right to left opposite of normal.... */
+    /* animation-direction: reverse; */
+    /* alternate-reverse animates from right to left and left to right i.e., in both ways.... */
+    /* alternate: animates from left to right then right to left.... */
+    /* animation-direction: alternate-reverse; */
+    animation-direction: alternate;
+}
+
+/* ********** Short-hand-property for all above 6 properties... ********** */
+/* .box{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(191, 162, 43);
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    animation: widthAnimate 2s ease-in-out 1s 10 alternate-reverse;
+} */
+
+/* We can do this for only width or also we can do this for both height and width.... */
+/* @keyframes widthAnimate {
+    from{
+        width: 300px;
+    }
+    to{
+        width: 720px;
+    }
+} */
+
+@keyframes widthAnimate {
+    from{
+        width: 300px;
+        height: 300px;
+    }
+    to{
+        height: 100vh;
+        width: 100vw;
+    }
+}

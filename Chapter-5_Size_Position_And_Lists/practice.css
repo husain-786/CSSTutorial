@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding: 50px;
+    /*vw or vh made the objects to change itself with the window size..., hence it makes those objects responsive..*/
+    /* padding: 4vw; */
+    background-color: black;
+    color: white;
+    /* height: 50px; */
+    position: sticky;
+    top: 0;
+}
+
+.headerUL li {
+    display: inline;
+    /*vw or vh made the objects to change itself with the window size..., hence it makes those objects responsive..*/
+    font-size: 3vw;  
+    padding: 15px;
+}
+
+.ulClass {
+    /* list-style: square inside url(icon.jpeg); */
+    list-style: square inside;
+    font-size: 2vw;
+    background-color: blueviolet;
+    color: bisque;
+}
+
+.container {
+    min-height: 2160px;
+    max-width: 720px;
+    margin: auto;
+    background-color: aqua;
+    border: 2px solid black;
+    padding: 10px;
+    position: relative;
+    /*when I will put value of z-index in container greater than header then container will cover the header now....*/
+    z-index: 3; 
+}

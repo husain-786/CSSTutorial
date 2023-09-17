@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.bar{
+    background-color: red;
+    height: 5px;
+    width: 5px;
+    transition-property: width;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+    /* transform-origin: 0; */
+}
+
+.bar:hover{
+    width: 100vw;
+}
+
+header{
+    background-color: black;   
+    height: 110px;
+}
+
+.container{
+    background-color: rgb(140, 140, 93);
+}

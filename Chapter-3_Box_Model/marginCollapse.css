@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box1{
+    background-color: rgb(179, 231, 231);
+    height: 250px;
+    width: 720px;
+    border: 4px solid black;
+    margin: 40px;
+}
+.box2{
+    background-color: rgb(83, 213, 170);
+    height: 250px;
+    width: 720px;
+    border: 4px solid black;
+    margin: 20px;
+}
+.child{
+    background-color: blueviolet;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 4px solid black;
+    /* margin: 20px 0px;     */
+}

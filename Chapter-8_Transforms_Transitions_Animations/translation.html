@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation/Transition</title>
+    <link rel="stylesheet" href="translation.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img id = "myImage" src="https://source.unsplash.com/random/960x200" alt="random">
+            <button id="btn">Toggle</button>
+        </div>
+    </div>
+</body>
+<script>
+    myImage.style.width = '150px';
+    btn.addEventListener("click", ()=>{
+        myImage.style.height = '520px';
+        if (myImage.style.width === '100vh'){
+            myImage.style.width = '150px';
+            myImage.style.height = '200px';
+        }
+        else if (myImage.style.width === '150px'){
+            myImage.style.width = '100vh';
+            myImage.style.height = '420px';
+        }        
+    })
+</script>
+</html>
+
+
+
+<!-- Transition:- Used to change the property values smoothly, over a given duration..... -->
+<!-- Transion Property:- Used to add transitions in the css... -->
+
+<!-- 
+    Following are the Transition Properties:-  
+        ==> transition-property: Property we want to transition(width or height)
+        ==> transition-duration: Time after which the transition will apply(1s)
+        ==> transition-timing-function: How we want the property to transition(Ease-in/Ease-out/Ease-in-out)
+        ==> transition-delay: After how much time the transition will apply
+        ==> transition: it is one handed property for all above four properties.....
+-->

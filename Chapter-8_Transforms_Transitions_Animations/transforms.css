@@ -1,0 +1,43 @@
+.container{
+    background-color: burlywood;
+    height: 100vh;
+}
+.box{
+    /* display: inline; */
+    
+    background-color: aquamarine;
+    border: 3px solid red;
+
+    /* padding: 5px; */
+
+    /*translate(20px/20vh/20%) will translate the current box to the right by specified pixels....*/
+    /*translate(x) will translate the current element to the x-axis by x*/
+    /* transform: translate(20vh); */
+
+    /*translate(x, y) will translate the current element to the x-axis as well y-axis by x*/
+    /*We can write both properties all together or we can separate also..*/    
+    /* transform: translate(20vh, 20vh) rotate(0.25turn); */
+    /* transform: translate(20vh, 20vh); */
+    transform: translate(150px, 150px) rotateX(45);
+
+    /*roatation may be in turn or may be in degree also....*/
+    /* transform:rotate(45deg); */
+
+    /*Transform origin is a point where the transform happens....., by default it is center....*/
+    transform-origin: 0;
+ 
+    /* we can use scaleX and scaleY properties all together or we can write separately.... */
+    /* transform: scale(2, 4); */
+    /* transform: scaleX(2); */
+    /* transform: scaleY(2); */
+
+    /*by default it will skew through the center but when I will set transform-origin:0, it will skew from left of the element.....*/
+    /* transform: skew(6deg, 6deg); */
+
+    /* We can use matrix in which we can put all the properties at a time like single handed.... */
+}
+
+
+/* for 3D transform:-
+    scaleX, scaleY, scaleZ
+*/

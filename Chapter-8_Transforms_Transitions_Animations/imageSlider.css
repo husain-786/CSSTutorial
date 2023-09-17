@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100vw;
+    background-color: black;
+    height: 170px;
+}
+
+.slider{
+    background-color: aqua;
+    /* width: 100vw; */
+    /* height: 480px; */
+    height: 523px;
+
+
+    /* 
+        overflow is a property when a content is going out of bound then we can use this property to handle
+        that situation..., eg:- i am defining a image inside a container but the image resolution is more 
+        than that container, so in that case the image will be displayed beyond the container,,, so to 
+        contain that image in the container, we uses property "overflow: ",..
+        overflow: hidden; it displays only the image as container size....
+        overflow: scroll; it allows us to see full image inside the container by scrolling...
+        overflow: auto; if image height is greater apply scroll in height and same as in case of width.....
+    */
+
+    overflow: hidden;
+    /* overflow: auto; */
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+.image1{
+    transform: translate(-90vw);
+    animation: slide1 1s ease-in-out 4s 1 forwards;
+}
+
+.image2{
+    transform: translate(0vw);
+    animation: slide1 1s ease-in-out 4s 1 forwards;
+}
+
+/* .image2{
+    transform: translate(90vw);
+} */
+
+@keyframes slide1 {
+    0%{
+        transform: translate(-90vw);
+    }
+    100%{
+        transform: translate(0vw);
+    }
+}
+
+@keyframes slide2 {
+    0%{
+        transform: translate(0vw);
+    }
+    100%{
+        transform: translate(90vw);
+    }
+}

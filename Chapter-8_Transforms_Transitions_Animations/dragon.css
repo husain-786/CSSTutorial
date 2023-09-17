@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: aqua;
+    background-image: url('dragon2.png');
+    background-size: cover;
+    height: 150vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    /* We are doing height and width 0 because we don't want to display the image after iterations.*/
+    height: 0;
+    width: 0;
+
+    animation-name: dragonAnimate;
+    /* duration can be use to set the speed of animation */
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    /* If we set iteration-count to infinite then animation will never stop */
+    animation-iteration-count: 10;
+    /* animation-iteration-count: infinite; */
+    animation-direction: alternate;
+}
+
+/* @keyframes dragonAnimate {
+    from{
+        width: 30px;
+        height: 30px;
+    }
+    to{
+        height: 50vh;
+        width: 50vw;
+    }
+} */
+
+
+/* *********** We can add as many intermediate properties as possible... *********** */
+
+@keyframes dragonAnimate {
+    /* when 0% is completed, we want to see this value..... */
+    0%{
+        width: 30px;
+        height: 30px;
+    }
+    /* when 50% is completed, we want to see this value..... */
+    50%{
+        height: 30vh;
+        width: 30vw;
+    }
+    /* when 100% is completed, we want to see this value..... */
+    100%{
+        height: 50vh;
+        width: 50vw;
+    }    
+}
+
+
+
+
+/* .box{
+    background-color: yellowgreen;
+    animation: boxAnimate 2s ease-in-out 1s 5 alternate-reverse;
+} */
+
+/* img{
+    animation: dragonAnimate 1s ease-in-out 1s 5 alternate-reverse;
+} */
+
+/* @keyframes boxAnimate {
+    from{
+        width: 30px;
+        height: 30px;
+    }
+    to{
+        height: 10vh;
+        width: 30vw;
+    }
+} */

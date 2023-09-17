@@ -1,0 +1,34 @@
+.calScreen{
+    margin: 19px 5px 24px 13px;
+    height: 34px;
+    width: 243px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(25, 0, 255);
+    padding: 10px;
+}
+
+
+.buttons{
+    margin: 45px 10px 10px 10px;
+    background-color: rgb(233, 247, 220);
+    border-radius: 10px;
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    padding: 10px;
+}
+
+
+.b{
+    border-radius: 10px;    
+    border: 1px solid darkblue;
+}
+
+
+.b:hover{
+    color: rgb(88, 22, 22);
+    background-color: #30edf4;
+    /* background-color: greenyellow; */
+}

@@ -1,0 +1,20 @@
+.box1{
+    background-color: aqua;
+    height: 360px;
+    width: 480px;
+    /* display: inline; */
+    /* display: block; */
+    display: inline-block;
+    border: 4px solid black;
+    padding: 15px;
+}
+.box2{
+    background-color: olivedrab;
+    height: 360px;
+    width: 480px;
+    /* display: inline; */
+    /*display: block;*/   /*by default display is block (<div> is a block level element)*/
+    display: inline-block;
+    border: 4px solid black;
+    padding: 15px;
+}

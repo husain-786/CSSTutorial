@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(52, 158, 28);
+    border: 2px solid red;
+}
+
+.container{
+    /* width: 770px; */
+    background-color: yellow;
+    display: grid;
+    margin: 15px;
+
+    /* grid-row-gap: 10px;
+    grid-column-gap: 10px; */
+    /*Instead of defining row-gap and column gap separately, we can simply define them in single....*/
+    /*First parameter defines the row-gap and Second property defines the column-gap....*/
+    /* grid-gap: 10px 10px; */
+    /*If I define the grid gap with single parameter lets say 15px then both row-gap and column-gap will be the 9px*/
+    grid-gap: 15px;
+
+    /*auto auto auto will create grid of 3 columns of equal width but if we mention the width it will use the mentioned width.....*/
+    /* grid-template-columns: auto auto auto; */
+    /*250px 250px auto will create grid of 3 columns, first 2 columns of 250px width and 3rd is auto so the 3rd column will be the remaining width*/    
+    grid-template-columns: 250px 250px auto;
+    /* grid-template-columns: 250px 250px 250px; */
+    /*grid-template rows is used to set the height of the individual rows... */
+    grid-template-rows: 500px 400px 300px;
+
+    /*justify-content is used to vertically align the whole grid of the container.....*/
+    /* justify-content: center; */
+    /*align-items is used to horizontally align the whole grid of the container.....*/
+    /* align-items: center; */
+}
+
+.name{
+    background-color: aquamarine;
+    border: 2px solid red;
+    padding: 10px;
+}

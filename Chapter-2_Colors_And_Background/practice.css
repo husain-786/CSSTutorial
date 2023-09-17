@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    background-color: black;
+    color: white;
+    width: 360px;
+    height: 480px;
+}
+.main{
+    color: red;
+    background-color: yellowgreen;
+    border: 3px solid black;
+}
+.bg{
+    background-image: url("husain.jpg");
+    height: 1080px;
+    width: 360px;
+    /* background-color: aqua;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll; */
+    background: aqua no-repeat cover scroll;
+}

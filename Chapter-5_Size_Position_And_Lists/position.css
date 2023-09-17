@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.headerUL li {
+    display: inline;
+}
+
+p{
+    text-align: center;
+    border: 2px solid red;
+}
+
+.box {
+    height: 20px;
+    width: 20px;
+    background-color: chartreuse;
+    /* position: relative; */
+    position: absolute;
+    left: 805px;
+    bottom: 75px;
+}
+
+.box1 {
+    background-color: bisque;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    /* position: static; */
+    /*Here Position is absolute and if the parent is non-static then it can move or can position within parents only...*/
+    /* position: absolute;  */
+    right: 0px;
+    top: 0;
+}
+
+.container {
+    background-color: aqua;
+    height: 50vh;
+    width: 50vw;
+    margin: auto;  /*It will position the container class in the center..*/
+    /* text-align: center; */
+    padding: 30px 30px;
+    /*
+        Here container is a parent object for .box and box1... 
+        If the parent object (container) position is static and the current position of child object is absolute 
+         then the child object can be set anywhere to the screen or its other non static parent....
+        If the parent object is relative and the child object absolute then the child object will move only in the parent object..
+    */
+    position: relative; 
+    /* position: static; */
+}
+
+header {
+    background-color: black;
+    color: white;
+    height: 70px;
+    /* display: inline; */
+}
+
+.listStyle {
+    /* list-style: circle; */
+    list-style: square;
+    display: block;
+    margin: 20px;
+    background-color: bisque;
+}

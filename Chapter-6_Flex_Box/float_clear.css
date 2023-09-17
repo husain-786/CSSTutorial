@@ -1,0 +1,22 @@
+.box1 {
+    height: 260px;
+    width: 260px;
+    background-color: red;
+    /*
+        --> when i will do float to right in box1 then it will flow to the right but there is a space in the left so box2 will 
+            come to the left end on the same line if I will not specify anything or specify left for float in the box2,...
+        --> But when I specify float as right in the box2 then box2 will also move to the right following the box 1....
+    */
+    float: right;
+    /* clear: left;     */
+    clear: both;
+}
+.box2 {
+    height: 260px;
+    width: 260px;
+    /* width: 16vw; */
+    background-color: aqua;
+    /* float: right; */
+    /* clear: both;     */
+    clear: right;
+}

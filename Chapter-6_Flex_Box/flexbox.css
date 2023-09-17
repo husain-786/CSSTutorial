@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*
+    Two types of flex property:-
+    ==> Parent(container) property:- flex-direction, flex-wrap, justify-content, align-items, align-content....
+    ==> Order, align-self, flex-grow, flex-shrink....
+*/
+
+.container {
+    background-color: blueviolet;
+    display: flex;
+    height: 150vh;
+    flex-direction: row;  /*is by default*/
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+    /*flex-wrap:- wrap ==> it adjust the elements according to the window size....*/
+    flex-wrap: wrap;
+    justify-content: center; /* It will align the items in center through horizontal.... */
+    align-items: center; /* It will align the items in center through vertical.... */
+    /* 
+        While reducing window size the contents get sepaated with equal spacing making its centers unchanged.....
+        And if I want to put all elements all together even incresing or decreasing size, I will use align-content property....
+    */
+    align-content: center;
+}
+
+.box1 {
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    order: 4;
+    /* It will send it to the end doen...*/
+    align-self: flex-end; 
+    /* flex-grow: 1;     */
+}
+
+.box2 {
+    /* display: flex; */
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    border: 2px solid black;    
+}

@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*****************************************************************/
+/*Parent*/
+header{
+    width: 100vw;
+    background-color:aquamarine;
+    display: inline-grid;
+    grid-template-columns: 22vh auto;
+    /* justify-content: space-between; */
+    align-items: center;
+    align-content: center;
+}
+
+/*Children*/
+/************************************************/
+/*Parent*/
+.intro{
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+/*Children*/
+.husain{
+    height: 20vh;
+    width: 10vw;
+    border-radius: 100px;
+}
+
+.husain_intro{
+    height: 18vh;
+    list-style: none;
+    display: grid;
+    /* justify-content: center; */
+}
+
+.visit_me{
+    list-style: none;
+    font-size: 30px;
+    padding: 5px;
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
+
+.visit_me li{
+    padding: 10px;
+}
+/**************************************************/
+
+/**************************************************/
+.mosque{
+    /* width: 100%; */
+    width: 100vw;
+    height: 80vh;
+}
+/**************************************************/
+
+/**************************************************/
+/*Parent*/
+.brothers{
+    width: 100vw;
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    background-color: aquamarine;
+    border: 5px solid black;
+    padding: 5px;
+}
+
+/*Children*/
+.saddam, .shahid, .sajjad{
+    height: 30vh;
+    width: 30vh;
+    border-radius: 200px;
+    border: 3px solid red;
+}
+/*********************************************************************/

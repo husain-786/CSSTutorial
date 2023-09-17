@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: hsl(0, 0%, 0%);
+    color: white;
+}
+ul{
+    list-style: none;
+    padding: 20px;
+}
+li{
+    display: inline;
+    padding: 40px;
+}
+
+.box1{
+    width: 25vw;
+    height: 90vh;
+    background-color: aquamarine;
+    border: 10px solid red;
+    padding: 5px 10px;
+}
+
+.box2{
+    width: 25vw;
+    /* height: 60vh; */
+    background-color: bisque;
+    border: 10px solid rgb(22, 103, 138);
+    padding: 5px 10px;
+}
+
+.container{
+    display: flex;
+    /* By default horizontal.... */
+    /* flex-direction: column;    */
+    justify-content: space-between; /* As here flex box justify-content is used then all the the child elements will find the same height
+    property even defined in single element.. we can difeerentiate the height and width property if */
+}

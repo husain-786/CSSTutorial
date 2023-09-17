@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(52, 158, 28);
+    border: 2px solid red;
+}
+
+.container{
+    background-color: yellow;
+    display: grid;
+
+    /* grid-row-gap: 10px;
+    grid-column-gap: 10px; */
+    /*Instead of defining row-gap and column gap separately, we can simply define them in single....*/
+    /*First parameter defines the row-gap and Second property defines the column-gap....*/
+    /* grid-gap: 10px 10px; */
+    /*If I define the grid gap with single parameter lets say 15px then both row-gap and column-gap will be the 9px*/
+    grid-gap: 15px;
+
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 70px 70px 70px 70px;
+}
+
+.name{
+    background-color: aquamarine;
+    border: 2px solid rgb(19, 84, 84);
+    padding: 10px;
+
+    /* It defines the span of a container(increases width).. If we define a particular grid item property as "grid-column:1/3",then it starts */
+    /* from the line 1 and go upto the line 3 that means the width will be ((3-1)*width of that column).....*/
+    /* If class name for each grid is same then we can define this property at the place where we are defining that grid in the html file.....*/
+    /* Here for each grid is defined same class name so defining a property here in the name claas will be reflected in all items with class name item...... And similarly happens in the grid-row but happens in the row only....*/
+    /* grid-column: 1/3; */
+
+    /* grid-row: 1/3; */
+}

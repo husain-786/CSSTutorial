@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    height: 10vh;
+}
+
+.container{
+    background-color: aqua;
+    height: 90vh;
+}
+.bar{
+    background-color: red;
+    height: 2px;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: progressBar;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 2;
+    animation-direction: normal;
+    animation-delay: 1s;
+}
+
+/* @keyframes progressBar {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100vw;
+    }
+} */
+
+
+@keyframes progressBar {
+    0%{
+        width: 0;
+        height: 2px;
+    }
+    99%{
+        width: 100vw;
+        height: 2px;
+    }
+    100%{
+        height: 0;
+        width: 0;
+    }
+}

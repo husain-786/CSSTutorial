@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(14, 136, 147);
+}
+.navbar{
+    background-color: black;
+    color: white;
+    /* padding: 20px; */
+}
+.navbar ul li{
+    display: inline-block; /* Allow to predefine the sizes*/
+    margin: 13px 240px;
+    text-decoration: underline white;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.left{
+    background-color: red;
+    display: inline-block;
+    width: 50%;
+    /* height: 80%; */
+    height: 90vh; 
+    /* height: 60vh; */
+    /* height: 360px; */
+    /* width: 720px; */
+    /* text-align: center; */
+    /* text-align: justify;
+    padding: 10px;
+    font-size: 20px; */
+
+    /* width: 46%;
+    padding-left: 2%;
+    padding-right: 2%; */
+
+    /* display: none; */
+    /* visibility: hidden; */
+    border: 4px solid yellowgreen;
+    box-sizing: border-box;  /* It will not let contents go out of the box*/
+    border-radius: 20px;    
+}
+.right{
+    background-color: green;
+    display: inline-block;
+    width: 50%;
+    /* height: 80%; */
+    height: 90vh;
+    /* height: 60vh; */
+    /* height: 360px; */
+    /* width: 720px; */
+    /* text-align: center; */
+    /* text-align: justify;
+    padding: 10px;
+    font-size: 20px; */
+
+    /* width: 46%;
+    padding-left: 2%;
+    padding-right: 2%; */
+
+    border: 4px solid red;
+    box-sizing: border-box;  /* It will not let contents go out of the box*/
+    border-radius: 20px; 
+}
+footer .center{
+    /* font-family: 'Baloo Bhai 2', cursive; */
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-transform: uppercase;
+    border: 4px solid yellowgreen;
+}

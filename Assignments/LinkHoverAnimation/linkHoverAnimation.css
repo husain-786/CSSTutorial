@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: rgb(20, 14, 14);
+    height: 8vh;
+    display: flex;
+    align-items: center;
+}
+
+header ul{
+    font-family: "Chivo Mono", monospace;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+header ul li{
+    list-style: none;
+    padding: 3vh;
+}
+
+header ul li a{
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease;
+}
+
+ul:hover li a{
+    color: #30edf4;
+}
+
+ul:hover li a:not(:hover){
+    color: white;
+    opacity: 0.5;
+    filter: blur(1px);
+    /* text-decoration: none;
+    transition: 0.5 ease; */
+}

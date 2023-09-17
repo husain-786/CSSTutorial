@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.red{
+    /* background-color: red; */
+    /* background-color: rgba(127, 21, 179, 0.324); */
+    background: rgba(158, 28, 223, 0.722);
+    color: black;
+    height: 250px;
+}
+.green{
+    background-color: green;
+    color:aliceblue;
+}

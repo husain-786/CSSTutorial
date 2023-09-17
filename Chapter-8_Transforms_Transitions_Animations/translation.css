@@ -1,0 +1,44 @@
+.container{
+    background-color: antiquewhite;
+    height: 100vh;
+    width: 100vw;
+}
+
+.box{
+    border: 3px solid rgb(200, 71, 71);
+    padding: 5px;
+}
+
+/* Applying transition on img */
+img{
+    width: 150px;
+    height: 100px;
+    /*
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: ease-in; */
+    /* When a transition-delay is used then after that much given time the transition will occur */
+    /* transition-delay: 1s; */
+
+    /* transition-property: height;    
+    height: 100px;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-delay: 1s; */
+
+    /* All above four properties can be written in the single one handed properties... */
+    /* transition: width 1s ease-in-out 1s; */
+    transition: width 1s ease-in-out, height 4s ease-in-out;
+}
+
+img:hover{
+    /*
+        :hover:- it is used when want to change the definition of an element when the cursor reaches on it...
+        e.g., :- img:hover (we are using hover with image that means when cursor is on the image the definition of that image get changed....
+
+        If we use transition property then the images will change gradually....
+    */
+    /* height: 50px; */
+    width: 100vh;
+    /* height: 30vh; */
+}
